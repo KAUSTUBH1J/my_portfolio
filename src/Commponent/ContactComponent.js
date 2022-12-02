@@ -4,7 +4,9 @@ import React from 'react';
 function ContactComponent(){
     return(
         <>
-        <h1>Contact</h1>
+        <div className="container">
+            Contact Me!
+        </div>
         </>
     )
 }
