@@ -4,6 +4,7 @@ import '../style.css'
 function ContactComponent() {
     return (
         <>
+        
             <div className="container container-sm contact-box p-5">
                 <div className="row justify-content-center">
                     <div className="col-md-6">

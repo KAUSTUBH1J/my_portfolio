@@ -1,12 +1,10 @@
 import React from 'react';
 
 function Nav() {
-  console.log("nav")
   return (
     <>
-        <h1>Nav</h1>
-        new changs
-    </>    
+      <h1>nav component</h1>
+    </>
   )
 }
 
