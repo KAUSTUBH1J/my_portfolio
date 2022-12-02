@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inria Sans", sans-serif;
+}
+.contact-box {
+  align-items: center;
+  background-color: #70b2e2;
+  border-radius: 59px;
+}
+.contact-heading {
+  font-size: 3rem;
+}
+
+.social-icons {
+  font-size: 2rem;
+}
+
+.field-group {
+  position: relative;
+}
+.input-field {
+  /* width: 100%; */
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid #211f1f;
+  /* padding: 10px 0; */
+  background: transparent;
+  font-size: 2em;
+  color: #111111;
+  transition: 0.3s ease;
+}
+.input-label {
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 1em;
+  color: #070404;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.input-field::placeholder {
+  color: transparent;
+}
+.input-field:placeholder-shown ~ .input-label {
+  font-size: 1em;
+  top: 25px;
+}
+.input-field:focus ~ .input-label {
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 1em;
+  color: #000000;
+}
