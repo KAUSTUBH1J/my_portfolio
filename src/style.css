@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Inria Sans", sans-serif;
 }
+body{
+  background-color: #F2FAFF;
+}
 .contact-box {
   align-items: center;
   background-color: #70b2e2;
@@ -21,7 +24,7 @@
   position: relative;
 }
 .input-field {
-  /* width: 100%; */
+  width: 50%;
   outline: 0;
   border: 0;
   border-bottom: 2px solid #211f1f;
@@ -54,3 +57,19 @@
   font-size: 1em;
   color: #000000;
 }
+
+
+
+/* project component css : start */
+
+
+img{
+  width: 50%;
+  /* height: 50%; */
+}
+
+.logo-box{
+  text-align: center;
+}
+
+/* project component css : end */
