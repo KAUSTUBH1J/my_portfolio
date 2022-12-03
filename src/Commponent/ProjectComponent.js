@@ -14,7 +14,7 @@ function ProjectComponent() {
                         </div>
                         <div className="col">
                             <div className="d-flex flex-column">
-                                <div className="row">
+                                <div className="row" Style={'flex-wrap:wrap'}>
                                     <div className="col-lg-6 col-md-6 logo-box">
                                         <img src={LogoMaker} alt="" />
                                     </div>
@@ -31,7 +31,7 @@ function ProjectComponent() {
                         </div>
                         <div className="col">
                             <div className="d-flex flex-column">
-                                <div className="row">
+                                <div className="row" Style={'flex-wrap:wrap-reverse'}>
                                     <div className="col-lg-6 col-md-6 text-start">
                                         <h3>TOURS & TRAVELS</h3>
                                         <p>In this project, The user can see the tour package and its details like root, place image, package price, and so more. And the admin can easily access it and modify it. The user can also compare the two tours. It helps to choose the best tour package and book it easily
