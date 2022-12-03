@@ -3,7 +3,7 @@ import React from 'react';
 function Nav() {
   return (
     <>
-      <div className="container">
+      {/* <div className="container"> */}
         <nav class="navbar navbar-expand-lg bg-light">
           <div class="navbar-brand"></div>
 
@@ -29,7 +29,7 @@ function Nav() {
             </div>
           </div>
         </nav>
-      </div>
+      {/* </div> */}
     </>
   )
 }
