@@ -1,6 +1,6 @@
 //this is home component
 import React from 'react';
-import Svg from 'D:/Web devlpment/React Portfolio/my-portfolio/src/Pattern.svg';
+import Svg from '../SVG files/Pattern.svg';
 function HomeComponent() {
     return (
         <>
