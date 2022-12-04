@@ -1,0 +1,133 @@
+/* Home section */
+.main_text{
+    font-size: 5.5rem !important;
+}
+.svg_container{
+    height: 40rem;
+}
+.svg_img{
+    height: 100%!important;     
+    width: auto;  
+    z-index: -10;
+}
+@media only screen and (max-width: 767px) {
+    .main_text{
+        font-size: 4.5rem !important;
+    }
+    .svg_img{
+        border: 0px solid black; 
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 575.95px) {
+    .main_text{
+        font-size: 2.5rem !important;
+    }
+    .svg_container{
+        height: 30rem;
+    }
+    .top-50 {
+        top: 40% !important;
+      }
+    .start-50 {
+        left: 40% !important;
+      }
+    .svg_img{
+        height: 100%!important;
+        width: auto;    
+    }
+}
+@media only screen and (max-width: 425px) {
+    .svg_container{
+        height: 22rem;
+    }
+    .top-50 {
+        top: 35% !important;
+      }
+    .start-50 {
+        left: 35% !important;
+      }
+    .svg_img{
+        height: 100%!important;
+        width: auto;    
+    }
+}
+
+
+/* Skills section  */
+.SkillContainer{
+    display: flex;
+    flex-direction: column;
+    background: rgb(129 207 255 / 39%);
+    border-radius: 30px;
+    padding: 20px;
+}
+.headLineSkill{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgb(0, 157, 255);
+}
+
+.Skills{
+    /* border: 2px solid red; */
+    padding:  20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.s_card{
+    height: 30px;
+    width: 48%;
+    margin: 15px 5px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgb(150 219 255 / 19%);
+}
+.s_card_l{
+    height: 100%;
+    margin: 0 0;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.s_card_name{
+    height: 70%;
+    /* width: ; */
+    margin: 0 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.s_card_name p{
+    color: aliceblue;
+    margin: 0;
+    font-weight: bold;
+}
+.s_card_per{
+    height: 70%;
+    /* width: ; */
+    padding: 9px;
+    margin: 0 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+}
+.s_card_per p{
+    /* color: rgb(0, 0, 0); */
+    /* text-shadow: 0 0 10px rgba(134, 134, 134, 0.534); */
+    text-shadow: 0 0 10px rgb(214 212 209);
+    font-weight: bold;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .s_card{
+        width: 100%;
+    }
+}

@@ -3,9 +3,9 @@ import React from 'react';
 function Nav() {
   return (
     <>
-      <div className="container">
-        <nav className="navbar navbar-expand-lg bg-light">
-          <div className="navbar-brand"></div>
+      {/* <div className="container"> */}
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="navbar-brand"></div>
 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@ function Nav() {
             </div>
           </div>
         </nav>
-      </div>
+      {/* </div> */}
     </>
   )
 }

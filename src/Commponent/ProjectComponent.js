@@ -61,7 +61,7 @@ function ProjectComponent() {
                                         </p>
                                     </div>
                                     <div className="col-lg-6 col-md-6 logo-box">
-                                        <img src={ToursLogo} alt="" />
+                                        <img src={ToursLogo}  alt="" />
                                     </div>
                                 </div>
                             </div>
