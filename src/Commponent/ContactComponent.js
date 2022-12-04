@@ -34,19 +34,19 @@ function ContactComponent() {
                     <div className="col-md-6">
 
                         <form className="pt-2">
-                            <div class="field-group">
+                            <div className="field-group">
                                 <input type="text" name="name" id="name" className="input-field" placeholder="Enter Name" autocomplete="off" />
-                                <label for="name" class="input-label">Name</label>
+                                <label htmlFor="name" className="input-label">Name</label>
                             </div>
 
-                            <div class="field-group">
+                            <div className="field-group">
                                 <input type="text" name="name" id="name" className="input-field" placeholder="Enter Name" autocomplete="off" />
-                                <label for="name" class="input-label">Email</label>
+                                <label htmlFor="name" className="input-label">Email</label>
                             </div>
 
-                            <div class="field-group">
+                            <div className="field-group">
                                 <textarea type="text" name="name" id="name" className="input-field" placeholder="Enter Name" autocomplete="off" />
-                                <label for="name" class="input-label">Message</label>
+                                <label htmlFor="name" className="input-label">Message</label>
                             </div>
 
                         </form>

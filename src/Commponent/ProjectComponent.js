@@ -1,8 +1,8 @@
 //this is project component
 import React from 'react';
-import '../style.css';  
 import ToursLogo from '../SVG files/Tours-Logo.svg';
 import LogoMaker from '../SVG files/Logo-Maker.svg';
+
 function ProjectComponent() {
     return (
         <>
@@ -48,6 +48,7 @@ function ProjectComponent() {
                         </div>
                     </div>
 
+                    
                 </div>
             </div>
         </>
