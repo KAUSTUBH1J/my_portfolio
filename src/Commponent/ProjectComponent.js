@@ -1,29 +1,9 @@
 //this is project component
-import React, { useRef, useEffect, useState } from 'react';
-import '../style.css';
-import '../script.js';
+import React from 'react';
 import ToursLogo from '../SVG files/Tours-Logo.svg';
 import LogoMaker from '../SVG files/Logo-Maker.svg';
 
-
 function ProjectComponent() {
-    const ref = useRef(null);
-    // const [arrowUp,arrowDown] = useState();
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if (ref.current.classList.contains('lift')) {
-                console.log("yes")
-                ref.current.classList.remove('lift')
-            }
-            else {
-                console.log("no")
-                ref.current.classList.add('lift')
-            }
-        },800);
-        return () => clearInterval(interval);
-    })
-    
-
     return (
         <>
             <div className="container">
@@ -68,9 +48,7 @@ function ProjectComponent() {
                         </div>
                     </div>
 
-                    <a href="#" id="arrow">
-                        <i ref={ref} className="fa fa-angle-down arrow "></i>
-                    </a>
+                    
                 </div>
             </div>
         </>
