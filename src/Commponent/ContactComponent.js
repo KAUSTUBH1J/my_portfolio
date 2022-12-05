@@ -1,6 +1,6 @@
 //this is contact component
 import React from 'react';
-import '../style.css'
+import '../Assets/StyleSheets/ContactStyle.css';
 function ContactComponent() {
     return (
         <>
