@@ -2,7 +2,7 @@
 import React from 'react';
 import ToursLogo from '../SVG files/Tours-Logo.svg';
 import LogoMaker from '../SVG files/Logo-Maker.svg';
-
+import '../Assets/StyleSheets/ProjectStyle.css';
 function ProjectComponent() {
     return (
         <>

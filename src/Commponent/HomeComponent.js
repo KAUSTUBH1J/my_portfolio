@@ -2,17 +2,17 @@
 
 import React, { useRef, useEffect } from 'react';
 import Svg from '../SVG files/Pattern.svg';
-import '../style.css';
+import '../Assets/StyleSheets/ArrowStyle.css';
 function HomeComponent() {
     const ref = useRef(null);
     useEffect(() => {
         const interval = setInterval(() => {
             if (ref.current.classList.contains('lift')) {
-                console.log("yes")
+                
                 ref.current.classList.remove('lift')
             }
             else {
-                console.log("no")
+                
                 ref.current.classList.add('lift')
             }
         }, 600);
