@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function Nav() {
+function Nav(props) {
   return (
     <>
       {/* <div className="container"> */}
@@ -26,6 +27,12 @@ function Nav() {
                   <a className="nav-link active me-5" aria-current="page" href="#">Contact me</a>
                 </li>
               </ul>
+            </div>
+            <div className='container'>
+              <a onClick={props.mode}>
+                Mode
+              </a>
+
             </div>
           </div>
         </nav>
