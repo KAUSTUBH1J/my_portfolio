@@ -3,8 +3,10 @@ import React from 'react';
 import Skill from './Skills Component/Skill'
 
 function SkillComponent() {
+    
     return (
         <>
+        <section id='Skills'>
             <div className='SkillContainer container'>
                 <div className='headLineSkill my-3'>
                     <h1>Skill Component</h1>
@@ -16,6 +18,7 @@ function SkillComponent() {
                     <Skill skill="HTML" per="95%" BgColor='rgb(255, 7, 7)' />
                     <Skill skill="CSS" per="90%" BgColor='rgb(255, 160, 7)' />
                     <Skill skill="JavaScript" per="85%" BgColor='rgb(216, 0, 255)' />
+                    <Skill skill="Java" per="95%" BgColor='rgb(216, 0, 255)' />
                     <Skill skill="PHP" per="80%" BgColor='rgb(0, 214, 255)' />
                     <Skill skill="BootStrap" per="70%" BgColor='rgb(124, 7, 255)' />
                     <Skill skill="SQL" per="80%" BgColor='rgb(60, 255, 0)' />
@@ -27,7 +30,7 @@ function SkillComponent() {
 
                 </div>
             </div>
-
+            </section>
         </>
     )
 }
