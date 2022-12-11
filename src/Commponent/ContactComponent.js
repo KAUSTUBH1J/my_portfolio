@@ -4,7 +4,7 @@ import '../Assets/StyleSheets/ContactStyle.css';
 function ContactComponent() {
     return (
         <>
-        
+
             <div className="container container-sm contact-box p-5">
                 <div className="row justify-content-center">
                     <div className="col-md-6">
@@ -23,37 +23,45 @@ function ContactComponent() {
                             </div>
                             <div className="col">
                                 <div className="d-flex flex-row">
-                                    <p><i className="fa-brands fa-linkedin m-2 social-icons"></i></p>
-                                    <p><i className="fa-brands fa-square-facebook m-2 social-icons"></i></p>
-                                    <p><i className="fa-brands fa-square-twitter m-2 social-icons"></i></p>
-                                    <p><i className="fa-brands fa-square-instagram m-2 social-icons"></i></p>
+                                    <p><i className="fa-brands fa-linkedin social-icons"></i></p>
+                                    <p><i className="fa-brands fa-square-facebook social-icons"></i></p>
+                                    <p><i className="fa-brands fa-square-twitter social-icons"></i></p>
+                                    <p><i className="fa-brands fa-square-instagram social-icons"></i></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6">
+
+                    <div className="col-md-6 ">
 
                         <form className="pt-2">
-                            <div className="field-group">
-                                <input type="text" name="name" id="name" className="input-field" placeholder="Enter Name" autocomplete="off" />
-                                <label htmlFor="name" className="input-label">Name</label>
+                            <div className="inputBox mb-3">
+                                <input type="text" name="name" required="required" id="name" className=""/>
+                                <span>Name</span>
                             </div>
 
-                            <div className="field-group">
-                                <input type="text" name="name" id="name" className="input-field" placeholder="Enter Name" autocomplete="off" />
-                                <label htmlFor="name" className="input-label">Email</label>
+                            <div className="inputBox mb-3">
+                                <input type="text" name="email" required="required" id="email" className="" />
+                                <span>Email</span>
                             </div>
 
-                            <div className="field-group">
-                                <textarea type="text" name="name" id="name" className="input-field" placeholder="Enter Name" autocomplete="off" />
-                                <label htmlFor="name" className="input-label">Message</label>
+                            <div className="inputBox ">
+                                <textarea type="text" name="message" required="required" id="message" className=""/>
+                                <span>Message</span>
                             </div>
 
+                            <div className="submitBtn d-grid mt-1">
+                                <button className="btn btn-primary btn-sm">
+                                    Submit
+                                </button>
+                            </div>
                         </form>
                     </div>
 
                 </div>
             </div>
+
+
 
         </>
     )
