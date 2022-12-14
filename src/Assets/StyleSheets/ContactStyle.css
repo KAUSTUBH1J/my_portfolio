@@ -15,8 +15,9 @@ body {
 
 .inputBox input,
 .inputBox textarea {
-  width: 100%;
-  font-size: 1em;
+  border-radius: 20px;
+  width: 80%;
+  font-size: 1.3em;
   padding: 3px; 
   
 }
@@ -25,9 +26,11 @@ body {
   position: absolute;
   left: 0;
   font-size: 1em;
-  padding-left: 15px;
+  padding-left: 65px;
+  padding-top: 10px;
+  
   text-transform: uppercase;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .inputBox input:focus ~ span,
@@ -43,8 +46,32 @@ body {
   
 }
 
+.submitBtn{
+  border-radius: 30px;
+  width: 80%;
+}
 
 .social-icons{
   margin: 0 10px 0 0;
+  font-size: 2em;
+}
+
+
+@media(max-width: 320px){
+  .contact-section{
+    padding-left: 25px !important;
+  }
+}
+@media(min-width: 375px){
+  .contact-section{
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+}
+
+@media(min-width: 425px){
+  .contact-section{
+    padding-left: 29px !important;
+  }
 }
 /* contact component css : end */
