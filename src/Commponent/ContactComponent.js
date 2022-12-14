@@ -5,10 +5,10 @@ function ContactComponent() {
     return (
         <>
 
-            <div className="container container-sm contact-box p-5">
-                <div className="row justify-content-center">
-                    <div className="col-md-6">
-                        <div className='d-flex flex-column'>
+            <div className="container container-sm contact-box p-4">
+                <div className="row justify-content-center align-items-center">
+                    <div className="col-md-6 contact-section ">
+                        <div className='d-flex flex-column ms-4'>
                             <div className="col">
                                 <h3 className="contact-heading">Contact me!</h3>
                             </div>
@@ -32,11 +32,11 @@ function ContactComponent() {
                         </div>
                     </div>
 
-                    <div className="col-md-6 ">
+                    <div className="col-md-6 text-center ">
 
                         <form className="pt-2">
                             <div className="inputBox mb-3">
-                                <input type="text" name="name" required="required" id="name" className=""/>
+                                <input type="text" name="name" required="required" id="name" className="" />
                                 <span>Name</span>
                             </div>
 
@@ -46,14 +46,16 @@ function ContactComponent() {
                             </div>
 
                             <div className="inputBox ">
-                                <textarea type="text" name="message" required="required" id="message" className=""/>
+                                <textarea type="text" name="message" required="required" id="message" className="" />
                                 <span>Message</span>
                             </div>
 
-                            <div className="submitBtn d-grid mt-1">
-                                <button className="btn btn-primary btn-sm">
-                                    Submit
-                                </button>
+                            <div className="text-center">
+                                <div className=" mt-1 ">
+                                    <button className="submitBtn btn btn-primary btn-sm">
+                                        Submit
+                                    </button>
+                                </div>
                             </div>
                         </form>
                     </div>
