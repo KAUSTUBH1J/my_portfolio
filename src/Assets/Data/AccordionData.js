@@ -7,7 +7,7 @@ export const AccordionData = [
     },
     {
         question: "What is your name?",
-        answer: 'Kaustubh Jadhav jkhjkhjkhjkh'
+        answer: 'Kaustubh Jadhav'
     }, {
         question: "What do you do?",
         answer: 'I make beautiful websites'
