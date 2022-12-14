@@ -34,8 +34,8 @@ function App() {
     <HomeComponent/>
     <SkillComponent/>
     <ProjectComponent/>
-    <AccordionComponent/>
     <ContactComponent/>
+    <AccordionComponent/>
     <FooterComponent/>
 
     

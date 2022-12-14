@@ -1,6 +1,16 @@
 /* @import url('https://fonts.cdnfonts.com/css/open-sans?styles=17409'); */
 /* Home section */
+.mainHeadline{
+    display: flex;
+    flex-wrap: wrap;
+}
 .main_text{
+    margin: 0 10px ;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.main_text span,
+.main_text p{
     font-size: 5.5rem !important;
 }
 .svg_container{
@@ -12,7 +22,8 @@
     z-index: -10;
 }
 @media only screen and (max-width: 767px) {
-    .main_text{
+    .main_text span,
+    .main_text p{
         font-size: 4.5rem !important;
     }
     .svg_img{
@@ -24,7 +35,8 @@
 }
 
 @media only screen and (max-width: 575.95px) {
-    .main_text{
+    .main_text span,
+    .main_text p{
         font-size: 2.5rem !important;
     }
     .svg_container{
@@ -57,11 +69,7 @@
     }
 }
 
-.container {
-        /* display: flex; */
-        /* width: fit-content; */
-        /* background-color: aqua; */
-    }
+
 
     .text {
         display: inline-block;
@@ -251,4 +259,31 @@
     height: 30px;
     width: 30px;
     background: rgb(255, 45, 45);
+}
+.SkillBox{
+    display: block;
+    width: fit-content;
+    padding: 2px 15px;
+    margin: 2px;
+    border-radius: 4px;
+    background-color: #36A0B7;
+}
+.skillBoxName{
+    font-weight: 600;
+
+}
+.FSkills .contant .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width:max-content;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 767px) {
+    .FContact{
+        display: none;
+        border: 2px solid black;
+        background-color: #796fff;
+    }
 }

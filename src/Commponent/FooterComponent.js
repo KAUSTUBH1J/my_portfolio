@@ -1,12 +1,12 @@
 //this is footer component
 import React from 'react';
-
+import F_Skills from './Skills Component/FooterSkills';
 function FooterComponent() {
     return (
         <>
             <section id="footer">
                 <div className='upFooter'>
-                    <div className='container'>
+                    <div className='container FContact'>
                         <div className='headline'>
                             <h1>Contact Me</h1>
                         </div>
@@ -14,7 +14,7 @@ function FooterComponent() {
                             <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur amet harum, repellendus odio illum, tempora eaque perspiciatis quisquam accusantium praesentium ullam esse obcaecati! Ipsa nam nostrum ullam sapiente fugit! </p>
                         </div>
                     </div>
-                    <div className='container'>
+                    <div className='container FSection'>
                         <div className='headline'>
                             <h1>Section</h1>
                         </div>
@@ -27,7 +27,7 @@ function FooterComponent() {
                             </ul>
                         </div>
                     </div>
-                    <div className='container'>
+                    <div className='container FProjects'>
                         <div className='headline'>
                             <h1>Projects</h1>
                         </div>
@@ -38,13 +38,24 @@ function FooterComponent() {
                             </ul>
                         </div>
                     </div>
-                    <div className='container'>
+                    <div className='container FSkills'>
                         <div className='headline'>
                             <h1>Skills</h1>
                         </div>
                         <div className='contant'>
-                            <div className='container'>
-                                
+                            <div className='container '>
+                                <F_Skills name="html"/>
+                                <F_Skills name="css"/>
+                                <F_Skills name="javaScript"/>
+                                <F_Skills name="php"/>
+                                <F_Skills name="SQL"/>
+                                <F_Skills name=" c "/>
+                                <F_Skills name=" python "/>
+                                <F_Skills name="java"/>
+                                <F_Skills name="scala"/>
+                                <F_Skills name="mongoDB"/>
+
+
                             </div>
                         </div>
                     </div>
@@ -63,7 +74,7 @@ function FooterComponent() {
                     </div>
                 </div>
             </section>
-            
+
         </>
     )
 }

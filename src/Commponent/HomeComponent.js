@@ -7,9 +7,31 @@ function HomeComponent() {
 
     document.addEventListener("DOMContentLoaded", function () {
         // Your code goes here
-        let textContainer = document.querySelector("#textContainer").querySelectorAll("span");
+        let textContainer = document.querySelector(".textContainer").querySelectorAll("span");
         console.log("hii");
         textContainer.forEach(element => {
+            element.addEventListener("mouseenter", function () {
+                this.classList.add("rubberBand");
+            })
+            element.addEventListener("mouseleave", function () {
+                // this.classList.remove("rubberBand");
+                setTimeout(function () { element.classList.remove("rubberBand"); }, 1000);
+            })
+        })
+        let textContainer2 = document.querySelector(".textContainer2").querySelectorAll("span");
+        console.log("hii");
+        textContainer2.forEach(element => {
+            element.addEventListener("mouseenter", function () {
+                this.classList.add("rubberBand");
+            })
+            element.addEventListener("mouseleave", function () {
+                // this.classList.remove("rubberBand");
+                setTimeout(function () { element.classList.remove("rubberBand"); }, 1000);
+            })
+        })
+        let textContainer3 = document.querySelector(".textContainer3").querySelectorAll("span");
+        console.log("hii");
+        textContainer3.forEach(element => {
             element.addEventListener("mouseenter", function () {
                 this.classList.add("rubberBand");
             })
@@ -30,21 +52,24 @@ function HomeComponent() {
                         <div className='fs-4 '>
                             <p>Kaustubh Dinesh Jadhav</p>
                         </div>
-                        <div className='my-2'>
+                        <div className='my-2 mainHeadline'>
                             {/* <h2 className='fs-1 fw-bold main_text'>Full Stack Developer.</h2> */}
-                            <h2 className="container" id="textContainer">
-
-                                <p className="text shadowCh" Style={'color: #000;'}>F </p>
+                            <h2 className=" textContainer main_text">
+                                <p className="text shadowCh " >F </p>
                                 <span className="text">u</span>
                                 <span className="text">l</span>
                                 <span className="text">l</span>
-                                <span className="text">&nbsp;</span>
+                                
+                            </h2>
+                            <h2 className="textContainer2 main_text">
                                 <span className="text">S</span>
                                 <span className="text">t</span>
                                 <span className="text">a</span>
                                 <span className="text">c</span>
                                 <span className="text">k</span>
-                                <span className="text">&nbsp;</span>
+                                
+                            </h2>
+                            <h2 className="textContainer3 main_text">
                                 <span className="text">D</span>
                                 <span className="text">e</span>
                                 <span className="text">v</span>
@@ -65,7 +90,7 @@ function HomeComponent() {
                             <button className='btn btn-primary'>Show More</button>
                         </div>
                     </div>
-                    <div className='col-sm-6 position-relative svg_container'   data-aos="zoom-out">
+                    <div className='col-sm-6 position-relative svg_container' data-aos="zoom-out">
                         <img className='position-absolute top-50 start-50 translate-middle svg_img' src={Svg} />
                     </div>
                 </div>
