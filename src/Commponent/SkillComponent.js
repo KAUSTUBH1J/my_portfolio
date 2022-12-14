@@ -6,8 +6,8 @@ function SkillComponent() {
     
     return (
         <>
-        <section id='Skills'>
-            <div className='SkillContainer container'>
+        <section id='Skills' data-aos="fade-in" data-aos-offset="0" >
+            <div className='SkillContainer container' >
                 <div className='headLineSkill my-3'>
                     <h1>Skill Component</h1>
                 </div>

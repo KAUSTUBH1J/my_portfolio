@@ -41,7 +41,7 @@ function HomeComponent() {
                                 <span className="text">&nbsp;</span>
                                 <span className="text">S</span>
                                 <span className="text">t</span>
-                                <span className="text" >a</span>
+                                <span className="text">a</span>
                                 <span className="text">c</span>
                                 <span className="text">k</span>
                                 <span className="text">&nbsp;</span>
@@ -50,14 +50,10 @@ function HomeComponent() {
                                 <span className="text">v</span>
                                 <span className="text">e</span>
                                 <span className="text">l</span>
-
                                 <span className="text">o</span>
                                 <span className="text">p</span>
                                 <span className="text">e</span>
                                 <span className="text">r</span>
-                                <script>
-
-                                </script>
                             </h2>
                         </div>
                         <div>
@@ -69,7 +65,7 @@ function HomeComponent() {
                             <button className='btn btn-primary'>Show More</button>
                         </div>
                     </div>
-                    <div className='col-sm-6 position-relative svg_container' >
+                    <div className='col-sm-6 position-relative svg_container'   data-aos="zoom-out">
                         <img className='position-absolute top-50 start-50 translate-middle svg_img' src={Svg} />
                     </div>
                 </div>

@@ -8,6 +8,8 @@ import AccordionComponent from './Commponent/AccordionComponent';
 import ContactComponent from './Commponent/ContactComponent';
 import FooterComponent from './Commponent/FooterComponent';
 import React, { useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   
@@ -35,7 +37,9 @@ function App() {
     <AccordionComponent/>
     <ContactComponent/>
     <FooterComponent/>
-    <script src={'./Assets/js/rubber.js'}></script>
+
+    
+  
     </>
   );
 }

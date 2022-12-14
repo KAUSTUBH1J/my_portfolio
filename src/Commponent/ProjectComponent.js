@@ -8,17 +8,17 @@ function ProjectComponent() {
         <>
             <div className="container">
                 <div className="row">
-                    <div className="d-flex flex-column">
+                    <div className="d-flex flex-column" >
                         <div className="col text-center pb-3">
                             <h1>PROJECTS</h1>
                         </div>
                         <div className="col">
                             <div className="d-flex flex-column">
                                 <div className="row" Style={'flex-wrap:wrap'}>
-                                    <div className="col-lg-6 col-md-6 logo-box">
+                                    <div className="col-lg-6 col-md-6 logo-box" data-aos="fade-right">
                                         <img src={LogoMaker} alt="" />
                                     </div>
-                                    <div className="col-lg-6 col-md-6 text-start">
+                                    <div className="col-lg-6 col-md-6 text-start" data-aos="fade-left" >
                                         <h3>LOGO MAKER</h3>
                                         <p>The project was to create a logo and a user has so many options to choose their logo categories. A user can able to edit the logo like to change the color, moving elements, changing font style, styling elements and so more thinks. And finally download the high-resolution logo in the jpg, pdf, SVG, and PNG types.
                                         </p>

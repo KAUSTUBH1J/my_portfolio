@@ -228,14 +228,27 @@
 /* Footer  */
 
 #footer{
-
-    border: 2px solid #796fff;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid #796fff; */
+    margin: 20px 0 0 0 ;
+    padding: 50px 10px;
+    background-color: rgb(135, 233, 255);
+    border-radius: 20px 20px 0 0;
 }
 .upFooter{
     display: flex;
     justify-content: space-between;
-    padding: ;
+    padding: 10px;
 }
-.container{
-
+.downFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+.downFooter div div p i{
+    height: 30px;
+    width: 30px;
+    background: rgb(255, 45, 45);
 }

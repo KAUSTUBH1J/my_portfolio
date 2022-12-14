@@ -33,8 +33,8 @@ function FooterComponent() {
                         </div>
                         <div className='contant'>
                             <ul>
-                                <li>logo maker</li>                                
-                                <li>Tour and Travels</li>                                
+                                <li>logo maker</li>
+                                <li>Tour and Travels</li>
                             </ul>
                         </div>
                     </div>
@@ -50,11 +50,20 @@ function FooterComponent() {
                     </div>
                 </div>
                 <div className='downFooter'>
-                    <div className='container'>
-
+                    <div>
+                        @CopyRight2022 kaustubh jadhav
+                    </div>
+                    <div>
+                        <div className="d-flex flex-row">
+                            <p><i className="fa-brands fa-linkedin social-icons"></i></p>
+                            <p><i className="fa-brands fa-square-facebook social-icons"></i></p>
+                            <p><i className="fa-brands fa-square-twitter social-icons"></i></p>
+                            <p><i className="fa-brands fa-square-instagram social-icons"></i></p>
+                        </div>
                     </div>
                 </div>
             </section>
+            
         </>
     )
 }
