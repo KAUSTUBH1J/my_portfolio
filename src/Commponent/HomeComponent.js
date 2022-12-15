@@ -8,7 +8,6 @@ function HomeComponent() {
     document.addEventListener("DOMContentLoaded", function () {
         // Your code goes here
         let textContainer = document.querySelector(".textContainer").querySelectorAll("span");
-        console.log("hii");
         textContainer.forEach(element => {
             element.addEventListener("mouseenter", function () {
                 this.classList.add("rubberBand");
@@ -19,7 +18,6 @@ function HomeComponent() {
             })
         })
         let textContainer2 = document.querySelector(".textContainer2").querySelectorAll("span");
-        console.log("hii");
         textContainer2.forEach(element => {
             element.addEventListener("mouseenter", function () {
                 this.classList.add("rubberBand");
@@ -30,7 +28,6 @@ function HomeComponent() {
             })
         })
         let textContainer3 = document.querySelector(".textContainer3").querySelectorAll("span");
-        console.log("hii");
         textContainer3.forEach(element => {
             element.addEventListener("mouseenter", function () {
                 this.classList.add("rubberBand");

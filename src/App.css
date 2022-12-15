@@ -192,6 +192,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    /* width: 50%; */
+    /* animation: skillUp 2s linear ; */
+    /* transition: width 2s linear; */
 }
 .s_card_name{
     height: 70%;
@@ -200,6 +203,30 @@
     border-radius: 20px;
     display: flex;
     align-items: center;
+}
+.s_card_l_in{
+    height: 100%;
+    margin: 0 0;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 50%; */
+    animation: skillUp 2s linear ;
+}
+@keyframes skillUp {
+    0%{
+        opacity: 0.2;
+        width: 15%;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        width: 100%;
+    }
 }
 .s_card_name p{
     color: aliceblue;
