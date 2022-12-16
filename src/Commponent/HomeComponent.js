@@ -39,27 +39,6 @@ function HomeComponent(props) {
             })
         })
 
-        let body = document.querySelector(".body");
-        console.log(body);
-        if (props.mode == 'light') {
-            console.log("light from home");
-            body.classList.remove("light");
-            body.classList.add("dark");
-        } else {
-            console.log("dark from home");
-            body.classList.remove("dark");
-            body.classList.add("light");
-
-        }
-        // body.addEventListener("mouseenter", function () {
-        //     this.classList.add("rubberBand");
-        // })
-        // body.addEventListener("mouseleave", function () {
-        //     // this.classList.remove("rubberBand");
-        //     setTimeout(function () { element.classList.remove("rubberBand"); }, 1000);
-        // })
-
-
     });
 
 

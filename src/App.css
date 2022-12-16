@@ -227,6 +227,14 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 20px rgb(150 219 255 / 19%);
 }
+.skill_light{
+    background-color: rgb(255, 255, 255);
+
+}
+.skill_dark{
+    background-color: rgb(34 70 89 / 74%);
+
+}
 .s_card_l{
     height: 100%;
     margin: 0 0;
@@ -312,6 +320,16 @@
     .left_Text_site{
         text-align: start;
     }
+}
+
+
+
+/* contact me */
+
+.inputBox input,.inputBox textarea{
+    border: none;
+    outline: none;
+    padding: 12px 0;
 }
 
 /* Footer  */

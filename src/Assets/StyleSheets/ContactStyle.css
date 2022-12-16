@@ -28,7 +28,6 @@ body {
   font-size: 1em;
   padding-left: 65px;
   padding-top: 10px;
-  
   text-transform: uppercase;
   transition: 0.4s;
 }
@@ -37,12 +36,13 @@ body {
 .inputBox input:valid ~ span,
 .inputBox textarea:focus ~ span,
 .inputBox textarea:valid ~ span {
-  transform: translateX(10px) translateY(-7px);
+  transform: translateX(60px) translateY(-7px);
   font-size: 0.65em;
   padding: 0 10px;
   background: white;
-  border-left: 1px solid rgb(181, 153, 153);
-  border-right: 1px solid rgb(181, 153, 153);
+  border-radius: 14px;
+  /* border-left: 1px solid rgb(181, 153, 153);
+  border-right: 1px solid rgb(181, 153, 153); */
   
 }
 

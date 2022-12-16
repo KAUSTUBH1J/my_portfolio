@@ -2,23 +2,23 @@
 import React from 'react';
 import Skill from './Skills Component/Skill'
 
-function SkillComponent() {
+function SkillComponent(props) {
     
     return (
         <>
         <div className='circle'></div>
-        <section id='Skills' data-aos="fade-in" data-aos-offset="0" >
+        <section id='Skills' data-aos="fade-in"  >
             <div className='SkillContainer container' >
                 <div className='headLineSkill my-3'>
                     <h1>Skill Component</h1>
                 </div>
                 <div className='Skills'>
 
-                    <Skill skill="react" per="85%" BgColor='rgb(255, 131, 7)' />
-                    <Skill skill="Laravel" per="90%" BgColor='rgb(43, 7, 255)' />
-                    <Skill skill="HTML" per="95%" BgColor='rgb(255, 7, 7)' />
+                    <Skill skill="react" per="85%" BgColor='rgb(255, 131, 7)'  />
+                    <Skill skill="Laravel" per="90%" BgColor='rgb(43, 7, 255)'  />
+                    <Skill skill="HTML" per="95%" BgColor='rgb(255, 7, 7)'  />
                     <Skill skill="CSS" per="90%" BgColor='rgb(255, 160, 7)' />
-                    <Skill skill="JavaScript" per="85%" BgColor='rgb(216, 0, 255)' />
+                    <Skill skill="JavaScript" per="85%" BgColor='rgb(216, 0, 255)'/>
                     <Skill skill="Java" per="95%" BgColor='rgb(216, 0, 255)' />
                     <Skill skill="PHP" per="80%" BgColor='rgb(0, 214, 255)' />
                     <Skill skill="BootStrap" per="70%" BgColor='rgb(124, 7, 255)' />

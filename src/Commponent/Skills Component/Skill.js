@@ -9,7 +9,7 @@ function Skill(props) {
             <div className='s_card' >
                 <div className='s_card_l' Style={`width: ${props.per}; `} >
                     <div  className='s_card_l_in' Style={` background-color: ${props.BgColor};`}  >
-                        <div className='s_card_name' >
+                        <div className='s_card_name' Style={'background-color: #fff0'} >
                             <p>{props.skill}</p>
                         </div>
                         <div className='s_card_per' Style={`color: ${props.BgColor};`}>
