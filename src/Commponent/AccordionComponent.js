@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { AccordionData } from '../Assets/Data/AccordionData';
 import '../Assets/StyleSheets/AccordionStyle.css';
 
-function AccordionComponent() {
+function AccordionComponent(props) {
     const [clicked, setClicked] = useState(false);
     const toggle = (key) => {
         if (clicked === key) {
@@ -20,7 +20,7 @@ function AccordionComponent() {
                 <div className="accordionHeading">
                     <h3>FAQ's</h3>
                 </div>
-                <div className="accordion-container">
+                <div className="accordion-container" Style={`border: 1px solid ${props.mode=='light'?'#000':'#fff'}`}>
                     {AccordionData.map((item, key) => {
                         return (
                             <>

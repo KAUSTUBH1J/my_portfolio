@@ -70,11 +70,11 @@ function App() {
     <>
     <Nav Fun_mode={changemMode} mode={mode} />
     <HomeComponent mode={mode}/>
-    <SkillComponent/>
-    <ProjectComponent/>
-    <ContactComponent/>
-    <AccordionComponent/>
-    <FooterComponent/>
+    <SkillComponent mode={mode} />
+    <ProjectComponent mode={mode}/>
+    <ContactComponent mode={mode}/>
+    <AccordionComponent mode={mode}/>
+    <FooterComponent mode={mode}/>
 
     
   

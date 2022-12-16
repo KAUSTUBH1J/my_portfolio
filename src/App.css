@@ -11,8 +11,8 @@
 /* navBar */
 
 .mode_img{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     margin: 0 20px;
 }
 
@@ -27,6 +27,11 @@
 }
 
 
+@media only screen and (min-width: 987px) {
+    .navbar-toggle{
+        border: 2px solid red;
+    }
+}
 
 
 /* Home section */
@@ -106,8 +111,8 @@
         width: fit-content;
         margin: 0;
         font-size: 8rem;
-        line-height: 7rem;
-        /* height: 65px; */
+        /* line-height: 7rem; */
+        height: 100px;
         transition: all 0.3s ease-out;
         font-weight: 1000;
         color: rgb(44, 44, 44);
@@ -170,6 +175,19 @@
         }
     }
 
+    @media only screen and (max-width: 425px) {
+        .text{
+            height: 56px;
+        }
+        .shadowCh{
+            text-shadow: 3px 3px 0 #796fff;
+        }
+    }
+    @media only screen and (max-width: 553px) {
+        .text{
+            height: 46px;
+        }
+    }
 
 
     .rubberBand {
@@ -339,8 +357,8 @@
     flex-direction: column;
     /* border: 2px solid #796fff; */
     margin: 20px 0 0 0 ;
-    padding: 50px 10px;
-    background-color: rgb(135, 233, 255);
+    padding: 50px 10px 10px 0;
+    background-color: rgb(169 219 251);
     border-radius: 20px 20px 0 0;
 }
 .upFooter{
@@ -352,12 +370,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .downFooter div div p i{
     height: 30px;
     width: 30px;
-    background: rgb(255, 45, 45);
+    /* background: rgb(255, 45, 45); */
 }
 .SkillBox{
     display: block;
@@ -365,11 +383,16 @@
     padding: 2px 15px;
     margin: 2px;
     border-radius: 4px;
-    background-color: #36A0B7;
+    background-color: #6fc4e5;
 }
 .skillBoxName{
     font-weight: 600;
 
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    padding: 0 22px ;
 }
 .FSkills .contant .container{
     display: flex;
@@ -384,5 +407,12 @@
         display: none;
         border: 2px solid black;
         background-color: #796fff;
+    }
+    .upFooter{
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+    }
+    .downFooter .flex-row p i{
+        font-size: 1rem;
     }
 }

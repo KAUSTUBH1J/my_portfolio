@@ -6,7 +6,7 @@
     display: grid;
     border-radius: 30px;
     /* background-color: #A555EC; */
-    background-color: #8448b9;
+    /* background-color: #8448b9; */
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
@@ -14,13 +14,14 @@
 .accordionHeading{
     text-align: center;
     margin-top: 1rem;
-    color: white;
+    /* color: white; */
 }
 
 .accordion-container{
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 15px;
-    color: white;
+    padding: 10px 20px;
+    /* color: white; */
     margin: 0rem 20rem 1rem;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .question-box span {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     display: grid;
     justify-items: center;
     align-items: center;
@@ -42,34 +43,25 @@
 .accordion-answer{
     margin: 0 12px;
     transform: translateY(-10px);
-    color: rgb(210, 198, 198);
+    /* color: rgb(210, 198, 198); */
 }
 
 
 /* media query : start */
 @media(min-width: 768px) and (max-width: 1024px){
     .accordion-container{
-        border: 1px solid white;
-        border-radius: 15px;
-        color: white;
         margin: 0rem 8rem 1rem;
     }
 }
 
 @media (min-width: 451px) and (max-width: 768px){
     .accordion-container{
-        border: 1px solid white;
-        border-radius: 15px;
-        color: white;
         margin: 0rem 3rem 1rem;
     }
 }
 
 @media(max-width: 450px) and ( min-width: 100px){
     .accordion-container{
-        border: 1px solid white;
-        border-radius: 15px;
-        color: white;
         margin: 0rem 3rem 1rem;
     }
 }

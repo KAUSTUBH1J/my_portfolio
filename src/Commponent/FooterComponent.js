@@ -1,10 +1,10 @@
 //this is footer component
 import React from 'react';
 import F_Skills from './Skills Component/FooterSkills';
-function FooterComponent() {
+function FooterComponent(props) {
     return (
         <>
-            <section id="footer">
+            <section id="footer" Style={`background-color: ${props.mode == 'light' ? 'rgb(169 219 251)' : 'rgb(71 123 153)'}`}>
                 <div className='upFooter'>
                     <div className='container FContact'>
                         <div className='headline'>
@@ -44,34 +44,35 @@ function FooterComponent() {
                         </div>
                         <div className='contant'>
                             <div className='container '>
-                                <F_Skills name="html"/>
-                                <F_Skills name="css"/>
-                                <F_Skills name="javaScript"/>
-                                <F_Skills name="php"/>
-                                <F_Skills name="SQL"/>
-                                <F_Skills name=" c "/>
-                                <F_Skills name=" python "/>
-                                <F_Skills name="java"/>
-                                <F_Skills name="scala"/>
-                                <F_Skills name="mongoDB"/>
+                                <F_Skills name="html" />
+                                <F_Skills name="css" />
+                                <F_Skills name="javaScript" />
+                                <F_Skills name="php" />
+                                <F_Skills name="SQL" />
+                                <F_Skills name=" c " />
+                                <F_Skills name=" python " />
+                                <F_Skills name="java" />
+                                <F_Skills name="scala" />
+                                <F_Skills name="mongoDB" />
 
 
                             </div>
                         </div>
                     </div>
                 </div>
+                <hr />
                 <div className='downFooter'>
-                    <div>
+                    <div className='container copyright'>
                         @CopyRight2022 kaustubh jadhav
                     </div>
-                    <div>
-                        <div className="d-flex flex-row">
-                            <p><i className="fa-brands fa-linkedin social-icons"></i></p>
-                            <p><i className="fa-brands fa-square-facebook social-icons"></i></p>
-                            <p><i className="fa-brands fa-square-twitter social-icons"></i></p>
-                            <p><i className="fa-brands fa-square-instagram social-icons"></i></p>
-                        </div>
+
+                    <div className="d-flex flex-row">
+                        <p><i className="fa-brands fa-linkedin social-icons"></i></p>
+                        <p><i className="fa-brands fa-square-facebook social-icons"></i></p>
+                        <p><i className="fa-brands fa-square-twitter social-icons"></i></p>
+                        <p><i className="fa-brands fa-square-instagram social-icons"></i></p>
                     </div>
+
                 </div>
             </section>
 
