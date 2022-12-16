@@ -21,17 +21,33 @@ function App() {
     }else{
       setMode('light');
     }
+
+
+
+    console.log(mode);
+  let body = document.querySelector(".body");
+  console.log(body);
+  if (mode == 'light') {
+      console.log("light from home");
+      body.classList.remove("body_light");
+      body.classList.add("body_dark");
+  } else {
+      console.log("dark from home");
+      body.classList.remove("body_dark");
+      body.classList.add("body_light");
+
+  }
     // return 0;
   }
   // chengemode();
-  console.log(mode);
+  
   
 
 
   return (
     <>
-    <Nav mode={changemMode} />
-    <HomeComponent/>
+    <Nav Fun_mode={changemMode} mode={mode} />
+    <HomeComponent mode={mode}/>
     <SkillComponent/>
     <ProjectComponent/>
     <ContactComponent/>

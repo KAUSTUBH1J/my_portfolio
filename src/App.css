@@ -1,4 +1,34 @@
-/* @import url('https://fonts.cdnfonts.com/css/open-sans?styles=17409'); */
+
+.body_light{
+    background-color: #c3e3f8;
+    color: #000;
+}
+.body_dark{
+    background-color: #224659;
+    color: #fff;
+}
+
+/* navBar */
+
+.mode_img{
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+}
+
+.container-fluid{
+    justify-content: space-between;
+}
+.side_container{
+    width: fit-content;
+}
+.side_container a{
+    cursor: pointer;
+}
+
+
+
+
 /* Home section */
 .mainHeadline{
     display: flex;
@@ -154,8 +184,20 @@
 
 /* Skills section  */
 
+
+.circle{
+    position: absolute;
+    top: 600px;
+    left: -150px;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(111, 103, 229, 0.406);
+    border-radius: 50%;
+    z-index: -50;
+}
 #Skills{
     margin-top: 50px;
+    transition: all 2s eease-in-out;
 }
 .SkillContainer{
     display: flex;
@@ -163,6 +205,7 @@
     background: rgb(129 207 255 / 39%);
     border-radius: 30px;
     padding: 20px;
+    backdrop-filter: blur(10px);
 }
 .headLineSkill{
     display: flex;
@@ -259,6 +302,17 @@
 }
 
 
+
+/* project */
+
+.left_Text_site{
+    text-align: end;
+}
+@media only screen and (max-width: 767px) {
+    .left_Text_site{
+        text-align: start;
+    }
+}
 
 /* Footer  */
 

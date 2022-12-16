@@ -6,15 +6,16 @@ import '../Assets/StyleSheets/ProjectStyle.css';
 function ProjectComponent() {
     return (
         <>
+        <section id='project' className='my-5'>
             <div className="container">
                 <div className="row">
                     <div className="d-flex flex-column" >
                         <div className="col text-center pb-3">
                             <h1>PROJECTS</h1>
                         </div>
-                        <div className="col">
+                        <div className="col my-2">
                             <div className="d-flex flex-column">
-                                <div className="row" Style={'flex-wrap:wrap'}>
+                                <div className="row" Style={'flex-wrap:wrap !important'}>
                                     <div className="col-lg-6 col-md-6 logo-box" data-aos="fade-right">
                                         <img src={LogoMaker} alt="" />
                                     </div>
@@ -29,18 +30,18 @@ function ProjectComponent() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col my-2">
                             <div className="d-flex flex-column">
                                 <div className="row" Style={'flex-wrap:wrap-reverse'}>
-                                    <div className="col-lg-6 col-md-6 text-start">
-                                        <h3>TOURS & TRAVELS</h3>
-                                        <p>In this project, The user can see the tour package and its details like root, place image, package price, and so more. And the admin can easily access it and modify it. The user can also compare the two tours. It helps to choose the best tour package and book it easily
+                                    <div className="col-lg-6 col-md-6 text-start" data-aos="fade-right">
+                                        <h3 className='left_Text_site'>TOURS & TRAVELS</h3>
+                                        <p className='left_Text_site'>In this project, The user can see the tour package and its details like root, place image, package price, and so more. And the admin can easily access it and modify it. The user can also compare the two tours. It helps to choose the best tour package and book it easily
                                         </p>
-                                        <p>
+                                        <p className='left_Text_site'>
                                             Languages : HTML, CSS, javascript, Php, Mysql, etc.
                                         </p>
                                     </div>
-                                    <div className="col-lg-6 col-md-6 logo-box">
+                                    <div className="col-lg-6 col-md-6 logo-box"  data-aos="fade-left">
                                         <img src={ToursLogo}  alt="" />
                                     </div>
                                 </div>
@@ -51,6 +52,7 @@ function ProjectComponent() {
                     
                 </div>
             </div>
+        </section>
         </>
     )
 }

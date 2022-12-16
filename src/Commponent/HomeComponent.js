@@ -1,9 +1,10 @@
 //this is home component
 
 // import React, { useRef, useEffect } from 'react';
-import Svg from '../SVG files/Pattern.svg';
+import Light_svg from '../SVG files/Light Pattern.svg';
+import Dark_svg from '../SVG files/Dark Pattern.svg';
 import '../Assets/StyleSheets/ArrowStyle.css';
-function HomeComponent() {
+function HomeComponent(props) {
 
     document.addEventListener("DOMContentLoaded", function () {
         // Your code goes here
@@ -37,13 +38,35 @@ function HomeComponent() {
                 setTimeout(function () { element.classList.remove("rubberBand"); }, 1000);
             })
         })
+
+        let body = document.querySelector(".body");
+        console.log(body);
+        if (props.mode == 'light') {
+            console.log("light from home");
+            body.classList.remove("light");
+            body.classList.add("dark");
+        } else {
+            console.log("dark from home");
+            body.classList.remove("dark");
+            body.classList.add("light");
+
+        }
+        // body.addEventListener("mouseenter", function () {
+        //     this.classList.add("rubberBand");
+        // })
+        // body.addEventListener("mouseleave", function () {
+        //     // this.classList.remove("rubberBand");
+        //     setTimeout(function () { element.classList.remove("rubberBand"); }, 1000);
+        // })
+
+
     });
 
 
 
     return (
         <>
-            <div className='container'>
+            <div className='container' >
                 <div className='row'>
                     <div className='col-sm-6 d-flex flex-column justify-content-center my-3'>
                         <div className='fs-4 '>
@@ -52,30 +75,30 @@ function HomeComponent() {
                         <div className='my-2 mainHeadline'>
                             {/* <h2 className='fs-1 fw-bold main_text'>Full Stack Developer.</h2> */}
                             <h2 className=" textContainer main_text">
-                                <p className="text shadowCh " >F </p>
-                                <span className="text">u</span>
-                                <span className="text">l</span>
-                                <span className="text">l</span>
-                                
+                                <p className={`text shadowCh  ${props.mode=='light'?'text-body':'text-white'}`} >F </p>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>u</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>l</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>l</span>
+
                             </h2>
                             <h2 className="textContainer2 main_text">
-                                <span className="text">S</span>
-                                <span className="text">t</span>
-                                <span className="text">a</span>
-                                <span className="text">c</span>
-                                <span className="text">k</span>
-                                
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>S</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>t</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>a</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>c</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>k</span>
+
                             </h2>
                             <h2 className="textContainer3 main_text">
-                                <span className="text">D</span>
-                                <span className="text">e</span>
-                                <span className="text">v</span>
-                                <span className="text">e</span>
-                                <span className="text">l</span>
-                                <span className="text">o</span>
-                                <span className="text">p</span>
-                                <span className="text">e</span>
-                                <span className="text">r</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>D</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>e</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>v</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>e</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>l</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>o</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>p</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>e</span>
+                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>r</span>
                             </h2>
                         </div>
                         <div>
@@ -88,13 +111,15 @@ function HomeComponent() {
                         </div>
                     </div>
                     <div className='col-sm-6 position-relative svg_container' data-aos="zoom-out">
-                        <img className='position-absolute top-50 start-50 translate-middle svg_img' src={Svg} />
+                        {/* <img className='position-absolute top-50 start-50 translate-middle svg_img' src={Light_svg} /> */}
+                        {props.mode=='light'?<img className="position-absolute top-50 start-50 translate-middle svg_img" src={Light_svg}/>:<img className="position-absolute top-50 start-50 translate-middle svg_img" src={Dark_svg}/>}
+
                     </div>
                 </div>
 
                 <a href="#Skills" id="arrow">
                     {/* <i ref={ref} className="fa fa-angle-down arrow "></i> */}
-                    <i className="fa fa-angle-down arrow "></i>
+                    <i className={`fa fa-angle-down arrow ${props.mode=='light'?'text-body':'text-white'}`}></i>
 
                 </a>
             </div>
