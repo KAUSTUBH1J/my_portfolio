@@ -6,8 +6,7 @@ import Moon from '../moon.png';
 function Nav(props) {
   return (
     <>
-     
-        <nav class="navbar navbar-expand-lg " Style={`background-color: ${props.mode=='light'?'#9ad1f3':'#183748'};`}>
+        <nav class="navbar navbar-expand-lg " Style={`background-color: ${props.mode=='light'?'#9ad1f3':'#183748e8'};`}>
           <div class="navbar-brand"></div>
 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

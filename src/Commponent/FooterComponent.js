@@ -44,7 +44,7 @@ function FooterComponent(props) {
                         </div>
                         <div className='contant'>
                             <div className='container '>
-                                <F_Skills name="html" mode={props.mode}/>
+                                <F_Skills name="html" />
                                 <F_Skills name="css" />
                                 <F_Skills name="javaScript" />
                                 <F_Skills name="php" />

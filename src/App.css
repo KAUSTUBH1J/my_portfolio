@@ -9,13 +9,20 @@
 }
 
 /* navBar */
-
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999999;
+}
 .mode_img{
     width: 25px;
     height: 25px;
     margin: 0 20px;
 }
-
+.collapse{
+    justify-content: space-between;
+}
 .container-fluid{
     justify-content: space-between;
 }
@@ -35,6 +42,9 @@
 
 
 /* Home section */
+#home{
+    margin-top: 50px;
+}
 .mainHeadline{
     display: flex;
     flex-wrap: wrap;
