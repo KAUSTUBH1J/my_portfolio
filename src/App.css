@@ -285,6 +285,14 @@
     /* width: 50%; */
     animation: skillUp 2s linear ;
 }
+@keyframes skillUpper {
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 1;
+    }
+}
 @keyframes skillUp {
     0%{
         opacity: 0.2;
@@ -311,6 +319,8 @@
     display: flex;
     align-items: center;
     background-color: aliceblue;
+    animation: skillUpper 0.5s linear ;
+
 }
 .s_card_per p{
     /* color: rgb(0, 0, 0); */
@@ -343,7 +353,9 @@
 
 
 /* contact me */
-
+#ContactMe{
+    margin-top: 15px;
+}
 .inputBox input,.inputBox textarea{
     border: none;
     outline: none;

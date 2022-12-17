@@ -4,6 +4,7 @@ import '../Assets/StyleSheets/ContactStyle.css';
 function ContactComponent(props) {
     return (
         <>
+            <section id='ContactMe'>
 
             <div className="container container-sm contact-box p-4">
                 <div className="row justify-content-center align-items-center">
@@ -64,6 +65,7 @@ function ContactComponent(props) {
                 </div>
             </div>
 
+            </section>
 
 
         </>

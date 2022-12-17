@@ -45,6 +45,7 @@ function HomeComponent(props) {
 
     return (
         <>
+        <section id='home'>
             <div className='container' >
                 <div className='row'>
                     <div className='col-sm-6 d-flex flex-column justify-content-center my-3'>
@@ -102,7 +103,7 @@ function HomeComponent(props) {
 
                 </a>
             </div>
-
+            </section>
         </>
     )
 }

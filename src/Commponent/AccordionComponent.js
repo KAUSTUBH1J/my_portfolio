@@ -16,6 +16,8 @@ function AccordionComponent(props) {
     return (
 
         <>
+        <section id='FQA'>
+
             <div className="accordion-section container accordionBox">
                 <div className="accordionHeading">
                     <h3>FAQ's</h3>
@@ -38,6 +40,8 @@ function AccordionComponent(props) {
                     })}
                 </div>
             </div>
+        </section>
+
         </>
 
     )

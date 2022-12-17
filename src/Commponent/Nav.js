@@ -17,16 +17,19 @@ function Nav(props) {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className={`nav-link active me-5  ${props.mode=='light'?'text-body':'text-white'}`} aria-current="page" href="#">Home</a>
+                  <a className={`nav-link active me-5  ${props.mode=='light'?'text-body':'text-white'}`} aria-current="page" href="#home">Home</a>
                 </li>
                 <li className="nav-item">
-                  <a className={`nav-link active me-5  ${props.mode=='light'?'text-body':'text-white'}`} aria-current="page" href="#">Skills</a>
+                  <a className={`nav-link active me-5  ${props.mode=='light'?'text-body':'text-white'}`} aria-current="page" href="#Skills">Skills</a>
                 </li>
                 <li className="nav-item">
-                  <a className={`nav-link active me-5  ${props.mode=='light'?'text-body':'text-white'}`} aria-current="page" href="#">Projects</a>
+                  <a className={`nav-link active me-5  ${props.mode=='light'?'text-body':'text-white'}`} aria-current="page" href="#project">Projects</a>
                 </li>
                 <li className="nav-item">
-                  <a className={`nav-link active me-5 w-100 ${props.mode=='light'?'text-body':'text-white'}`} aria-current="page" href="#">Contact me</a>
+                  <a className={`nav-link active me-5 w-100 ${props.mode=='light'?'text-body':'text-white'}`} aria-current="page" href="#ContactMe">Contact me</a>
+                </li>
+                <li className="nav-item">
+                  <a className={`nav-link active me-5 ${props.mode=='light'?'text-body':'text-white'}`} aria-current="page" href="#FQA">FQA</a>
                 </li>
               </ul>
             <div className='side_container'>

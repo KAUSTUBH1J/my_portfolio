@@ -6,7 +6,7 @@ function FooterSkills(props) {
         <>
             
                 <div className='SkillBox' >
-                    <span className='skillBoxName'>{props.name}</span>
+                    <span className='skillBoxName' Style={`color: #0f536c`}>{props.name}</span>
                 </div>
             
         </>
