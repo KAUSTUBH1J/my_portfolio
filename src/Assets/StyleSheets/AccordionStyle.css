@@ -33,6 +33,12 @@
     margin: 8px;
 }
 
+.question-box p {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
 .question-box span {
     /* color: rgb(255, 255, 255); */
     display: grid;
@@ -42,8 +48,11 @@
 
 .accordion-answer{
     margin: 0 12px;
-    transform: translateY(-10px);
+    transform: translateY(-4px);
     /* color: rgb(210, 198, 198); */
+    -webkit-transition: transform 2s linear;
+    transition: transform 2s linear;
+    transition: 2s;
 }
 
 
