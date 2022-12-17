@@ -16,31 +16,34 @@ function AccordionComponent(props) {
     return (
 
         <>
-        <section id='FQA'>
+            <section id='FQA'>
 
-            <div className="accordion-section container accordionBox">
-                <div className="accordionHeading">
-                    <h3>FAQ's</h3>
-                </div>
-                <div className="accordion-container" Style={`border: 1px solid ${props.mode=='light'?'#000':'#fff'}`}>
-                    {AccordionData.map((item, key) => {
-                        return (
-                            <>
-                                <div className="question-box" onClick={() => toggle(key)}>
-                                    <p>Q. {item.question}</p>
-                                    <span>{clicked !== key ? <ion-icon name="caret-forward-outline"></ion-icon>: <ion-icon name="caret-down-outline"></ion-icon>}</span>
-                                </div>
+                <div className="accordion-section container accordionBox">
+                    <div className="accordionHeading">
+                        <h3>FAQ's</h3>
+                    </div>
+                    <div className="accordion-container" Style={`border: 1px solid ${props.mode == 'light' ? '#000' : '#fff'}`}>
+                        {AccordionData.map((item, key) => {
+                            return (
+                                <>
+                                    <div className="question-box" onClick={() => toggle(key)}>
+                                        <p>Q. {item.question}</p>
+                                        <span>{clicked !== key ? <ion-icon name="caret-forward-outline"></ion-icon> : <ion-icon name="caret-down-outline"></ion-icon>}</span>
+                                    </div>
 
-                                {clicked === key ?
-                                    (<p className="dropdown accordion-answer">-->{item.answer}</p>)
-                                    : null
-                                }
-                            </>
-                        )
-                    })}
+                                    {clicked === key ?
+
+                                        (<div className="accordion-answer">
+                                            <p className="dropdown accordion-answer-inside">-->{item.answer}</p>
+                                        </div>)
+                                        : null
+                                    }
+                                </>
+                            )
+                        })}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
         </>
 
