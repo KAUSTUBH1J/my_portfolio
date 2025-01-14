@@ -1,10 +1,12 @@
 //this is footer component
 import React from 'react';
-import F_Skills from './Skills Component/FooterSkills';
+import FooterSkills from './Skills Component/FooterSkills';
+
 function FooterComponent(props) {
+    
     return (
         <>
-            <section id="footer" Style={`background-color: ${props.mode == 'light' ? 'rgb(169 219 251)' : 'rgb(71 123 153)'}`}>
+            <section id="footer" Style={`background-color: ${props.mode==='light' ? 'rgb(169 219 251)' : 'rgb(71 123 153)'}`}>
                 <div className='upFooter'>
                     <div className='container FContact'>
                         <div className='headline'>
@@ -44,17 +46,15 @@ function FooterComponent(props) {
                         </div>
                         <div className='contant'>
                             <div className='container '>
-                                <F_Skills name="html" />
-                                <F_Skills name="css" />
-                                <F_Skills name="javaScript" />
-                                <F_Skills name="php" />
-                                <F_Skills name="SQL" />
-                                <F_Skills name=" c " />
-                                <F_Skills name=" python " />
-                                <F_Skills name="java" />
-                                <F_Skills name="scala" />
-                                <F_Skills name="mongoDB" />
-
+                            {props.Skills.map((item)=>{
+                                return(
+                                    <>
+                                        <FooterSkills name={item.skill} />
+                                    </>
+                                )
+                            }
+                            )}
+                                
 
                             </div>
                         </div>

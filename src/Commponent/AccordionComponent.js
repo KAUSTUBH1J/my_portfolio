@@ -22,7 +22,7 @@ function AccordionComponent(props) {
                     <div className="accordionHeading">
                         <h3>FAQ's</h3>
                     </div>
-                    <div className="accordion-container" Style={`border: 1px solid ${props.mode == 'light' ? '#000' : '#fff'}`}>
+                    <div className="accordion-container" Style={`border: 1px solid ${props.mode === 'light' ? '#000' : '#fff'}`}>
                         {AccordionData.map((item, key) => {
                             return (
                                 <>
@@ -34,7 +34,7 @@ function AccordionComponent(props) {
                                     {clicked === key ?
 
                                         (<div className="accordion-answer">
-                                            <p className="dropdown accordion-answer-inside">-->{item.answer}</p>
+                                            <p className="dropdown accordion-answer-inside">--{item.answer}</p>
                                         </div>)
                                         : null
                                     }

@@ -55,51 +55,53 @@ function HomeComponent(props) {
                         <div className='my-2 mainHeadline'>
                             {/* <h2 className='fs-1 fw-bold main_text'>Full Stack Developer.</h2> */}
                             <h2 className=" textContainer main_text">
-                                <p className={`text shadowCh  ${props.mode=='light'?'text-body':'text-white'}`} >F </p>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>u</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>l</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>l</span>
-
+                                <p className={`text shadowCh  ${props.mode==='light'?'text-body':'text-white'}`} >F </p>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>u</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>l</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>l</span>
                             </h2>
                             <h2 className="textContainer2 main_text">
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>S</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>t</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>a</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>c</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>k</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>S</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>t</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>a</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>c</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>k</span>
 
                             </h2>
                             <h2 className="textContainer3 main_text">
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>D</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>e</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>v</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>e</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>l</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>o</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>p</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>e</span>
-                                <span className={`text  ${props.mode=='light'?'text-body':'text-white'}`}>r</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>D</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>e</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>v</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>e</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>l</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>o</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>p</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>e</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>r</span>
                             </h2>
                         </div>
                         <div>
-                            <p>To work with reputed organization and secure a challenging position in this organization and learning more
-                                and more things and want to make significant contribution to success of the company
-                            </p>
+                            <p>I am a software professional with experience in building and maintaining web applications using technologies like React JS, Node.js, and PHP. My goal is to create fast, easy-to-use, and scalable solutions that help businesses succeed and improve user experiences.</p>
+
+                            <p>I really love learning, problem solving, and collaboration. Focus is on technical as well as strategic parts of the projects that result in outcome-driven deliverables, helping drive business objectives.</p>
+
+                            <p>Let's get connected and explore how we can work together towards some great solutions!</p>
+                         
                         </div>
                         <div>
                             <button className='btn btn-primary'>Show More</button>
                         </div>
                     </div>
                     <div className='col-sm-6 position-relative svg_container' data-aos="zoom-out">
-                        {/* <img className='position-absolute top-50 start-50 translate-middle svg_img' src={Light_svg} /> */}
-                        {props.mode=='light'?<img className="position-absolute top-50 start-50 translate-middle svg_img" src={Light_svg}/>:<img className="position-absolute top-50 start-50 translate-middle svg_img" src={Dark_svg}/>}
+                        <img className='position-absolute top-50 start-50 translate-middle svg_img' src={props.mode==='light'?Light_svg:Dark_svg} alt='' />
+
 
                     </div>
                 </div>
 
-                <a href="#Skills" id="arrow">
+                <a aria-current="page" href="#Skills" id="arrow">
                     {/* <i ref={ref} className="fa fa-angle-down arrow "></i> */}
-                    <i className={`fa fa-angle-down arrow ${props.mode=='light'?'text-body':'text-white'}`}></i>
+                    <i className={`fa fa-angle-down arrow ${props.mode==='light'?'text-body':'text-white'}`}></i>
 
                 </a>
             </div>

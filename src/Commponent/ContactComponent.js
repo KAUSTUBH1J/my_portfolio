@@ -37,24 +37,24 @@ function ContactComponent(props) {
 
                         <form className="pt-2">
                             <div className="inputBox mb-3">
-                                <input type="text" name="name" required="required" id="name" Style={`background-color: ${props.mode == 'light' ? '#fff' : 'rgb(34 70 89 / 74%)'} `} />
-                                <span className={` ${props.mode == 'light' ? 'text-body' : 'text-white'}`}>Name</span>
+                                <input type="text" name="name" required="required" id="name" Style={`background-color: ${props.mode==='light' ? '#fff' : 'rgb(34 70 89 / 74%)'} `} />
+                                <span className={` ${props.mode==='light' ? 'text-body' : 'text-white'}`}>Name</span>
                                 
                             </div>
 
                             <div className="inputBox mb-3">
-                                <input type="text" name="email" required="required" id="email" Style={`background-color: ${props.mode == 'light' ? '#fff' : 'rgb(34 70 89 / 74%)'} `} />
-                                <span className={` ${props.mode == 'light' ? 'text-body' : 'text-white'}`}>Email</span>
+                                <input type="text" name="email" required="required" id="email" Style={`background-color: ${props.mode==='light' ? '#fff' : 'rgb(34 70 89 / 74%)'} `} />
+                                <span className={` ${props.mode==='light' ? 'text-body' : 'text-white'}`}>Email</span>
                             </div>
 
                             <div className="inputBox ">
-                                <textarea type="text" name="message" required="required" id="message" Style={`background-color: ${props.mode == 'light' ? '#fff' : 'rgb(34 70 89 / 74%)'} `} />
-                                <span className={` ${props.mode == 'light' ? 'text-body' : 'text-white'}`}>Message</span>
+                                <textarea type="text" name="message" required="required" id="message" Style={`background-color: ${props.mode==='light' ? '#fff' : 'rgb(34 70 89 / 74%)'} `} />
+                                <span className={` ${props.mode==='light' ? 'text-body' : 'text-white'}`}>Message</span>
                             </div>
 
                             <div className="text-center">
                                 <div className=" mt-1 ">
-                                    <button className={`submitBtn btn ${props.mode == 'light' ? 'btn-primary' : 'btn-dark'} btn-sm`} >
+                                    <button className={`submitBtn btn ${props.mode==='light' ? 'btn-primary' : 'btn-dark'} btn-sm`} >
                                         Submit
                                     </button>
                                 </div>

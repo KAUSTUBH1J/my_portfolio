@@ -1,7 +1,5 @@
 //this is skill component
-import React from 'react';
-import PropTypes from 'prop-types';
-
+import React from 'react';  
 
 function Skill(props) {
     return (
@@ -12,8 +10,8 @@ function Skill(props) {
                         <div className='s_card_name' Style={'background-color: #fff0'} >
                             <p>{props.skill}</p>
                         </div>
-                        <div className='s_card_per' Style={`color: ${props.BgColor}; background-color: ${props.mode=='light'?'':'#fff'};`}>
-                            <p Style={`color: ${props.mode=='light'?'':'#fff'};  `}  >{props.per}</p>  
+                        <div className='s_card_per' Style={`color: ${props.BgColor}; background-color: ${props.mode==='light'?'':'#fff'};`}>
+                            <p Style={`color: ${props.BgColor}  `}  >{props.per}</p>  
                             {/* color white backgroud same as s_card_l  textshadow 0 0 5px rgb(134,134,134,0.53)*/}
                         </div>
                     </div>
