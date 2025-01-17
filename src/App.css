@@ -409,7 +409,6 @@
 }
 .skillBoxName{
     font-weight: 600;
-
 }
 .copyright{
     display: flex;
@@ -437,4 +436,19 @@
     .downFooter .flex-row p i{
         font-size: 1rem;
     }
+}
+
+.line {
+    position: absolute;
+    left: 30px; /* Adjust to align with your design */
+    width: 4px;
+    height: 100%; /* Full height */
+    background-color: #0d6efd; /* Line color */
+    transform: scaleY(0); /* Start hidden */
+    transform-origin: top; /* Animate from top */
+    transition: transform 1s ease-out; /* Smooth animation */
+}
+  
+.line.visible {
+    transform: scaleY(1); /* Full height when visible */
 }

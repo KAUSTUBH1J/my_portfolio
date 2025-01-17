@@ -25,7 +25,7 @@ function AccordionComponent(props) {
                     <div className="accordion-container" Style={`border: 1px solid ${props.mode === 'light' ? '#000' : '#fff'}`}>
                         {AccordionData.map((item, key) => {
                             return (
-                                <>
+                                <div key={item.id}>
                                     <div className="question-box" onClick={() => toggle(key)}>
                                         <p>Q. {item.question}</p>
                                         <span>{clicked !== key ? <ion-icon name="caret-forward-outline"></ion-icon> : <ion-icon name="caret-down-outline"></ion-icon>}</span>
@@ -38,7 +38,7 @@ function AccordionComponent(props) {
                                         </div>)
                                         : null
                                     }
-                                </>
+                                </div>
                             )
                         })}
                     </div>

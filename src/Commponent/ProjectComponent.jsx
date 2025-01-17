@@ -15,7 +15,7 @@ function ProjectComponent() {
                         </div>
                         <div className="col my-2">
                             <div className="d-flex flex-column">
-                                <div className="row" Style={'flex-wrap:wrap !important'}>
+                                <div className="row" Style={{'flex-wrap':'wrap !important'}}>
                                     <div className="col-lg-6 col-md-6 logo-box" >
                                         <img src={LogoMaker} alt="" />
                                     </div>

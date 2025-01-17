@@ -9,6 +9,7 @@ import ContactComponent from './Commponent/ContactComponent';
 import FooterComponent from './Commponent/FooterComponent';
 import React, { useState } from 'react';
 import 'aos/dist/aos.css';
+import Experience from './Commponent/Experience';
 
 function App() {
   
@@ -21,43 +22,43 @@ function App() {
       setMode('light');
     }
 
-  let body = document.querySelector(".body");
-  if (mode === 'light') {
-      console.log("light from home");
-      body.classList.remove("body_light");
-      body.classList.add("body_dark");
-  } else {
-      console.log("dark from home");
-      body.classList.remove("body_dark");
-      body.classList.add("body_light");
-  }
-
-
-
-  let skills = document.querySelector(".Skills").querySelectorAll("div");
-  console.log(skills);
-  skills.forEach(element => {
+    let body = document.querySelector(".body");
     if (mode === 'light') {
-      console.log("light from home");
-      element.classList.remove("skill_light");
-      element.classList.add("skill_dark");
+        console.log("light from home");
+        body.classList.remove("body_light");
+        body.classList.add("body_dark");
     } else {
-      console.log("dark from home");
-      element.classList.remove("skill_dark");
-      element.classList.add("skill_light");
+        console.log("dark from home");
+        body.classList.remove("body_dark");
+        body.classList.add("body_light");
     }
-  })
+
+
+
+    let skills = document.querySelector(".Skills").querySelectorAll("div");
+    console.log(skills);
+    skills.forEach(element => {
+      if (mode === 'light') {
+        console.log("light from home");
+        element.classList.remove("skill_light");
+        element.classList.add("skill_dark");
+      } else {
+        console.log("dark from home");
+        element.classList.remove("skill_dark");
+        element.classList.add("skill_light");
+      }
+    })
     
 
-  // if (mode === 'light') {
-  //     console.log("light from home");
-  //     skills.classList.remove("skill_light");
-  //     skills.classList.add("skill_dark");
-  // } else {
-  //     console.log("dark from home");
-  //     skills.classList.remove("skill_dark");
-  //     skills.classList.add("skill_light");
-  // }
+    // if (mode === 'light') {
+    //     console.log("light from home");
+    //     skills.classList.remove("skill_light");
+    //     skills.classList.add("skill_dark");
+    // } else {
+    //     console.log("dark from home");
+    //     skills.classList.remove("skill_dark");
+    //     skills.classList.add("skill_light");
+    // }
     // return 0;
   }
   // chengemode();
@@ -84,7 +85,7 @@ function App() {
         color: '#ACD68B'
     },
     {
-        skill: 'Three js',
+        skill: 'Three JS',
         percentage: '50%',
         color: '#6DB56D'
     }, 
@@ -124,6 +125,7 @@ function App() {
     <Nav Fun_mode={changemMode} mode={mode} />
     <HomeComponent mode={mode}/>
     <SkillComponent mode={mode} Skills={Skills} />
+    <Experience mode={mode}/>
     <ProjectComponent mode={mode}/>
     <ContactComponent mode={mode}/>
     <AccordionComponent mode={mode}/>

@@ -1,11 +1,15 @@
 //this is home component
 
-// import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Light_svg from '../SVG files/Light Pattern.svg';
 import Dark_svg from '../SVG files/Dark Pattern.svg';
 import '../Assets/StyleSheets/ArrowStyle.css';
-function HomeComponent(props) {
+import HeadLineCharater from './HeadLineCharater';
 
+function HomeComponent(props) {
+    const [HeadTitle, setHeadTitle] = useState('');
+    const [Loading, setLoading] = useState(false);
+    const textRef = useRef();
     document.addEventListener("DOMContentLoaded", function () {
         // Your code goes here
         let textContainer = document.querySelector(".textContainer").querySelectorAll("span");
@@ -41,9 +45,24 @@ function HomeComponent(props) {
 
     });
 
+    useEffect(()=>{        
+        const Title = 'Full Stack Developer';
+        const head = Title.split('');
+        setHeadTitle(head);
+        console.log('1');
+        setLoading(true)
+    },[]);
 
-
+    // const HeadTitle = 'test ';
+    const addClass = () =>{
+        textRef.current.classList.add('rubberBand');
+    }
+    function remove(){
+        setTimeout(function () { textRef.current.classList.remove('rubberBand'); }, 1000);
+        
+    }
     return (
+        
         <>
         <section id='home'>
             <div className='container' >
@@ -54,19 +73,19 @@ function HomeComponent(props) {
                         </div>
                         <div className='my-2 mainHeadline'>
                             {/* <h2 className='fs-1 fw-bold main_text'>Full Stack Developer.</h2> */}
-                            <h2 className=" textContainer main_text">
+                            <h2 className="  main_text">
                                 <p className={`text shadowCh  ${props.mode==='light'?'text-body':'text-white'}`} >F </p>
-                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>u</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`} onMouseOver={addClass} ref={textRef} onMouseLeave={remove}>u</span>
+                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}onMouseOver={addClass} ref={textRef} onMouseLeave={remove}>l</span>
                                 <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>l</span>
-                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>l</span>
+                                <HeadLineCharater charater='l' mode={props.mode} />
                             </h2>
-                            <h2 className="textContainer2 main_text">
-                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>S</span>
-                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>t</span>
-                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>a</span>
-                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>c</span>
-                                <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>k</span>
-
+                            <h2 className=" main_text">
+                                <HeadLineCharater charater='s' mode={props.mode}/>
+                                <HeadLineCharater charater='k' mode={props.mode}/>
+                                <HeadLineCharater charater='i' mode={props.mode}/>
+                                <HeadLineCharater charater='l' mode={props.mode}/>
+                                <HeadLineCharater charater='l' mode={props.mode}/>
                             </h2>
                             <h2 className="textContainer3 main_text">
                                 <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>D</span>
@@ -79,6 +98,15 @@ function HomeComponent(props) {
                                 <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>e</span>
                                 <span className={`text  ${props.mode==='light'?'text-body':'text-white'}`}>r</span>
                             </h2>
+                            {console.log('2')}
+                            {/* {Loading ?
+                            HeadTitle.map((item,index)=>{
+                                if(item === ' '){       
+                                    return `<h1>`;
+                                }else{
+                                    return `<span >${item}</span>`;
+                                }
+                            }):null} */}
                         </div>
                         <div>
                             <p>I am a software professional with experience in building and maintaining web applications using technologies like React JS, Node.js, and PHP. My goal is to create fast, easy-to-use, and scalable solutions that help businesses succeed and improve user experiences.</p>

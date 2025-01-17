@@ -46,16 +46,14 @@ function FooterComponent(props) {
                         </div>
                         <div className='contant'>
                             <div className='container '>
-                            {props.Skills.map((item)=>{
+                            {props.Skills.map((item,index)=>{
                                 return(
-                                    <>
-                                        <FooterSkills name={item.skill} />
-                                    </>
+                                    <div key={index}>
+                                    
+                                        <FooterSkills key={index}  name={item.skill} />
+                                    </div>
                                 )
-                            }
-                            )}
-                                
-
+                            })}
                             </div>
                         </div>
                     </div>
