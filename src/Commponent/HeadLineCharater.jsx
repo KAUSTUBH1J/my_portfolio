@@ -10,7 +10,7 @@ export default function HeadLineCharater(props) {
   
     }
     function remove(){
-        setTimeout(function () { ref.current.classList.remove('rubberBand'); }, 2000);
+        setTimeout(function () { ref.current.classList.remove('rubberBand'); }, 1000);
         
     }
     useEffect(()=>{

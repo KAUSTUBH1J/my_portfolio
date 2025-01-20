@@ -1,8 +1,33 @@
 //this is skill component
-import React from 'react';
+import React,{useEffect} from 'react';
 import Skill from './Skills Component/Skill'
-
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 function SkillComponent(props) {
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger
+    
+        // GSAP animation for the circle
+        gsap.to(".circle", {
+          x: "05vw", // Move the circle across the screen
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".circle", // Watch the `.circle` element
+            // start: "bottom", // Start animation when `.circle` enters the viewport
+            // end: "bottom center", // End animation when `.circle` exits the viewport
+            scrub: 1, // Enable smooth scrolling animation
+          },
+        });
+
+        // Continuous up-and-down animation
+    gsap.to(".circle", {
+        y: 15, // Move 50px down
+        duration: 2, // Duration of the animation
+        repeat: -1, // Infinite repetition
+        yoyo: true, // Reverse the animation (up and down)
+        ease: "power1.inOut", // Smooth easing
+      });
+      }, []);
     return (
         <>
         <div className='circle'></div>

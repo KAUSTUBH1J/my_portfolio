@@ -42,9 +42,17 @@
 
 
 /* Home section */
-#home{
+/* #home{
     margin-top: 50px;
-}
+} */
+
+#home {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    width: 100%; /* Full screen width */
+    overflow: hidden; /* Prevent overflow issues */
+  }
+  
 .mainHeadline{
     display: flex;
     flex-wrap: wrap;
@@ -212,17 +220,17 @@
 
 /* Skills section  */
 
-
-.circle{
+.circle {
     position: absolute;
     top: 600px;
-    left: -150px;
+    left: -50px; /* Starting position off-screen */
     height: 300px;
     width: 300px;
-    background-color: rgba(111, 103, 229, 0.406);
-    border-radius: 50%;
+    background-image: linear-gradient( #17a9f743,#796fff5c);
+    border-radius: 33% 67% 56% 44% / 30% 49% 51% 70% ;
     z-index: -50;
-}
+    will-change: transform; 
+  }
 #Skills{
     margin-top: 50px;
     transition: all 2s eease-in-out;
